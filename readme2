@@ -1,0 +1,32 @@
+# Simple Batch Script with Message Box and Popups
+
+## Description
+
+This is a simple batch script that demonstrates how to:
+1. Display a message box with "Yes" and "No" options.
+2. Perform different actions based on the user's choice.
+3. Create multiple small pop-up windows if the "Yes" option is selected.
+
+## Purpose
+
+This script is intended as a learning tool for batch scripting and demonstrating basic user interaction and process creation. **It is not intended for malicious use.**
+
+## Usage
+
+1.  Save the code as a file with a `.bat` extension (e.g., `popup_demo.bat`).
+2.  Double-click the `.bat` file to run it.
+
+## **⚠️ WARNING ⚠️**
+
+**This script will create multiple pop-up windows if you click "Yes".** This can be disruptive. Please run this script responsibly and only on systems where you have permission.
+
+## Code Explanation
+
+*   The script uses VBScript temporarily to create the initial message box and the subsequent pop-ups.
+*   It checks the return value of the message box to determine the user's choice.
+*   If "Yes" is chosen, it enters a loop to create 20 separate pop-up windows using the `start` command.
+*   If "No" is chosen, it uses the `taskkill` command to terminate the batch file process.
+
+## License
+
+[Optional: You can include a license like MIT if you want others to be able to use and modify your code.]
